@@ -1,0 +1,129 @@
+:root {
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-dark-cyan: hsl(179, 100%, 13%);
+    --clr-para: hsla(0, 0%, 100%, 0.75);
+    --clr-bg-headings-btn: hsl(0, 0%, 95%);
+
+    --ff-heading: 'Big Shoulders Display', cursive;
+    --ff-para: 'Lexend Deca', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* font-size: 15px */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body {
+    background-color: var(--clr-bg-headings-btn);
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+  }
+
+  .content {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+    max-width: 958px;
+  }
+
+  .sedan__section {
+    background-color: var(--clr-orange);
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  .suv__section {
+    background-color: var(--clr-cyan);
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  .luxury__section {
+    background-color: var(--clr-dark-cyan);
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  h2 {
+    font-family: var(--ff-heading);
+    color: var(--clr-bg-headings-btn);
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+
+  p {
+    font-family: var(--ff-para);
+    font-size: 15px;
+    color: var(--clr-para);
+    font-weight: var(--fw-400);
+    margin-right: 0.75rem;
+    line-height: 1.7;
+    opacity: 0.7;
+  }
+
+  button {
+    background-color: var(--clr-bg-headings-btn);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.85rem;
+    width: 150px;
+    font-family: var(--ff-para);
+  }
+
+  .btn1 {
+    color: var(--clr-orange);
+  }
+
+  .btn2 {
+    color: var(--clr-cyan);
+  }
+
+  .btn3 {
+    color: var(--clr-dark-cyan);
+  }
+
+  .desktop__gap {
+    display: grid;
+    margin-top: '';
+  }
+
+  @media (min-width: 850px) {
+    .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .desktop__gap {
+        margin-top: 3rem;
+    }
+  }
